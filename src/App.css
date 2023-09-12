@@ -1,42 +1,89 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app {
+  font-family: sans-serif;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  opacity: 0.5;
+  transition: transform 0.5s, opacity 0.5s;
+  transform: scale(0.9);
+  padding: 30px;
+}
+
+.section.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This will push the logo to the left, buttons to center, and social icons to the right */
+  background-color: #f7f7f7;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  /* You can style your logo text or adjust the size, colors, etc. here */
+  font-family: sans-serif; /* Fallback to generic sans-serif if Arial isn't available */
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  padding: 5px;
 }
 
-@keyframes logo-spin {
+.button-group {
+  display: flex;
+  gap: 2px; /* This creates a 10px gap between each button */
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px; /* This creates a 10px gap between each social icon */
+}
+
+/* Define the animation */
+@keyframes fadeInUp {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(50px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Set the initial state */
+.animated-headline {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: fadeInUp; /* Reference the animation */
+  animation-duration: 1s; /* Duration of animation */
+  animation-delay: 0.5s; /* Add a slight delay */
+  animation-fill-mode: forwards; /* Retains the property values set by the last keyframe */
 }
 
-.card {
-  padding: 2em;
+/* Set the initial state */
+.animated-paragraph {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: fadeInUp; /* Reference the animation */
+  animation-duration: 1s; /* Duration of animation */
+  animation-delay: 0.5s; /* Add a slight delay */
+  animation-fill-mode: forwards; /* Retains the property values set by the last keyframe */
 }
 
-.read-the-docs {
-  color: #888;
+/* On hover, keep the text visible */
+.home-section:hover .animated-headline {
+  opacity: 1;
+  transform: translateY(0);
 }
