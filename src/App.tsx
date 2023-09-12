@@ -49,12 +49,12 @@ function App() {
           <button onClick={() => navigateTo("contact")}>Contact</button>
         </div>
         <div className="social-icons">
-          <a href="https://discord.com/" target="_blank" rel="noreferrer">
-            {" "}
-            <img src="path-to-discord-icon.png" alt="Discord" />
-          </a>
-          <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-            <img src="path-to-twitter-icon.png" alt="Twitter" />
+          <a
+            href="https://twitter.com/BitBlocks368"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/x.png" alt="X (Twitter)" />
           </a>
         </div>
       </div>
@@ -63,16 +63,14 @@ function App() {
         className={`section ${activeSection === "home" ? "active" : ""}`}
         id="home"
       >
-        <section className="home-section">
-          <h1 className="animated-headline">
-            Re-Defining Digital Realms through Web3 Publishing
-          </h1>
+        <section className="content-section">
+          <div className="image-container">
+            <img src="/home.png" alt="About" className="image-effect" />
+          </div>
+          <h1 className="animated-headline">Re-Defining Digital Realms</h1>
           <p className="animated-paragraph">
-            Embark on a journey where decentralized web infrastructures meld
-            with visionary storytelling. At ONSVO PTY LTD, we don't just follow
-            the trends — we set them. Harnessing the profound capabilities of
-            Web3, we're crafting a future where content isn't just consumed but
-            truly lived.
+            We are embarking on a journey to Web3 Publishing. A place where
+            decentralized infrastructures meld with visionary storytelling.
           </p>
         </section>
       </div>
@@ -80,16 +78,14 @@ function App() {
         className={`section ${activeSection === "about" ? "active" : ""}`}
         id="about"
       >
-        <section className="home-section">
-          <h1 className="animated-headline">
-            Champions of a Decentralized Tomorrow
-          </h1>
+        <section className="content-section">
+          <div className="image-container">
+            <img src="/about.png" alt="About" className="image-effect" />
+          </div>
+          <h1 className="animated-headline">Decentralize Tomorrow</h1>
           <p className="animated-paragraph">
-            We are more than a publishing entity; we're pioneers. With every
-            project, we strive to push the boundaries, challenging traditional
-            notions of interaction and ownership. Our mission is simple yet
-            profound: to use decentralized infrastructures as the bedrock upon
-            which we build transformative social experiences.
+            Web3 internet is challenging traditional notions of business,
+            interaction and ownership.
           </p>
         </section>
       </div>
@@ -97,16 +93,14 @@ function App() {
         className={`section ${activeSection === "next" ? "active" : ""}`}
         id="next"
       >
-        <section className="home-section">
-          <h1 className="animated-headline">
-            Introducing Our NFT Series: A Revolution in Digital Artistry
-          </h1>
+        <section className="content-section">
+          <div className="image-container">
+            <img src="/next.png" alt="Next" className="image-effect" />
+          </div>
+          <h1 className="animated-headline">Digital Artistry</h1>
           <p className="animated-paragraph">
-            Imagine owning a piece of the digital frontier, an artwork that's as
-            unique as your fingerprint. Our upcoming NFT series isn't just a
-            collection but a testament to the possibilities of Web3. Each token
-            represents not only a visual masterpiece but also our commitment to
-            creating value in this ever-evolving digital age.
+            Own a piece of this new frontier, with digital artwork that is
+            uniquely yours.
           </p>
         </section>
       </div>
@@ -114,15 +108,14 @@ function App() {
         className={`section ${activeSection === "contact" ? "active" : ""}`}
         id="contact"
       >
-        <section className="home-section">
-          <h1 className="animated-headline">
-            Join Our Decentralized Renaissance
-          </h1>
+        <section className="content-section">
+          <div className="image-container">
+            <img src="/contact.png" alt="Contact" className="image-effect" />
+          </div>
+          <h1 className="animated-headline">Join the Renaissance</h1>
           <p className="animated-paragraph">
-            Have queries or wish to collaborate? Reach out. Our digital channels
-            on Discord and Twitter are always open, resonating with like-minded
-            visionaries and enthusiasts. Together, let's co-author the next
-            chapter of the Web3 narrative.
+            Our channels on Discord and Twitter are always open, resonating with
+            like-minded visionaries and enthusiasts.
           </p>
         </section>
       </div>
