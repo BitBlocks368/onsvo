@@ -143,17 +143,15 @@
   gap: 2px; /* This creates a 10px gap between each button */
 }
 
-/*
  .social-icons {
   display: flex;
-  gap: 5px; /* This creates a 5px gap between each social icon
+  /* gap: 5px; /* This creates a 5px gap between each social icon */
 }
-*/
 
 .social-icons img { /* This targets all img elements within .social-icons */
   height: 50px;
   width: auto;
-  align-items: center;
+  vertical-align: middle;
 }
 
 /* Define the animation */
@@ -221,4 +219,9 @@
   justify-content: center;     /* Center image horizontally */
   align-items: center;         /* Center image vertically */
   z-index: 90;
+}
+
+#home h1, #about h1, #next h1, #contact h1,
+#home p, #about p, #next p, #contact p {
+    color: white;
 }
