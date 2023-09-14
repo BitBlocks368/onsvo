@@ -8,7 +8,50 @@ function App() {
   // setActiveSection(section);
   // };
 
-  // ... inside App function before the return
+  const handleKeyPress = (e: KeyboardEvent) => {
+    const sectionHeight = window.innerHeight;
+    let currentSection = 0;
+
+    if (window.scrollY < sectionHeight) {
+      currentSection = 1;
+    } else if (window.scrollY < sectionHeight * 2) {
+      currentSection = 2;
+    } else if (window.scrollY < sectionHeight * 3) {
+      currentSection = 3;
+    } else {
+      currentSection = 4;
+    }
+
+    switch (e.key) {
+      case "ArrowDown":
+        if (currentSection < 4) {
+          window.scrollTo({
+            top: sectionHeight * currentSection,
+            behavior: "smooth",
+          });
+        }
+        break;
+      case "ArrowUp":
+        if (currentSection > 1) {
+          window.scrollTo({
+            top: sectionHeight * (currentSection - 2),
+            behavior: "smooth",
+          });
+        }
+        break;
+      default:
+        break;
+    }
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
+
   React.useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
