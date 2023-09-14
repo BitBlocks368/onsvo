@@ -84,7 +84,7 @@ function App() {
   return (
     <div className="app">
       <div className="menu">
-        <div className="logo">ONSVO PTY LTD</div>
+        <div className="logo">ONSVO</div>
         <div className="button-group">
           <button onClick={() => navigateTo("home")}>Home</button>
           <button onClick={() => navigateTo("about")}>About</button>
@@ -107,59 +107,103 @@ function App() {
         id="home"
       >
         <section className="content-section">
-          <div className="image-container">
-            <img src="/home.png" alt="About" className="image-effect" />
+          <div className="row align-items-center">
+            <div className="col-md-6 image-container mb-3 mb-md-0">
+              <img
+                src="/home.png"
+                alt="About"
+                className="image-effect img-fluid"
+              />
+            </div>
+            <div className="col-md-6 text-md-left text-center">
+              <h1 className="animated-headline mt-3 mt-md-0">
+                Re-Defining Digital Realms
+              </h1>
+
+              <p className="animated-paragraph mt-2">
+                We are embarking on a journey to Web3 Publishing. A place where
+                decentralized infrastructures meld with visionary storytelling.
+              </p>
+            </div>
           </div>
-          <h1 className="animated-headline">Re-Defining Digital Realms</h1>
-          <p className="animated-paragraph">
-            We are embarking on a journey to Web3 Publishing. A place where
-            decentralized infrastructures meld with visionary storytelling.
-          </p>
         </section>
       </div>
+
       <div
         className={`section ${activeSection === "about" ? "active" : ""}`}
         id="about"
       >
         <section className="content-section">
-          <div className="image-container">
-            <img src="/about.png" alt="About" className="image-effect" />
+          <div className="row align-items-center">
+            <div className="col-md-6 image-container mb-3 mb-md-0">
+              <img
+                src="/about.png"
+                alt="About"
+                className="image-effect img-fluid"
+              />
+            </div>
+            <div className="col-md-6 text-md-left text-center">
+              <h1 className="animated-headline mt-3 mt-md-0">
+                Decentralize Tomorrow
+              </h1>
+              <p className="animated-paragraph mt-2">
+                Web3 internet is challenging traditional notions of business,
+                interaction and ownership.
+              </p>
+            </div>
           </div>
-          <h1 className="animated-headline">Decentralize Tomorrow</h1>
-          <p className="animated-paragraph">
-            Web3 internet is challenging traditional notions of business,
-            interaction and ownership.
-          </p>
         </section>
       </div>
+
       <div
         className={`section ${activeSection === "next" ? "active" : ""}`}
         id="next"
       >
         <section className="content-section">
-          <div className="image-container">
-            <img src="/next.png" alt="Next" className="image-effect" />
+          <div className="row align-items-center">
+            <div className="col-md-6 image-container mb-3 mb-md-0">
+              <img
+                src="/next.png"
+                alt="Next"
+                className="image-effect img-fluid"
+              />
+            </div>
+            <div className="col-md-6 text-md-left text-center">
+              <h1 className="animated-headline mt-3 mt-md-0">
+                Digital Artistry
+              </h1>
+              <p className="animated-paragraph mt-2">
+                Own a piece of this new frontier, with digital artwork that is
+                uniquely yours.
+              </p>
+            </div>
           </div>
-          <h1 className="animated-headline">Digital Artistry</h1>
-          <p className="animated-paragraph">
-            Own a piece of this new frontier, with digital artwork that is
-            uniquely yours.
-          </p>
         </section>
       </div>
+
       <div
         className={`section ${activeSection === "contact" ? "active" : ""}`}
         id="contact"
       >
         <section className="content-section">
-          <div className="image-container">
-            <img src="/contact.png" alt="Contact" className="image-effect" />
+          <div className="row align-items-center">
+            <div className="col-md-6 image-container mb-3 mb-md-0">
+              <img
+                src="/contact.png"
+                alt="Contact"
+                className="image-effect img-fluid"
+              />
+            </div>
+            <div className="col-md-6 text-md-left text-center">
+              <h1 className="animated-headline mt-3 mt-md-0">
+                Join the Renaissance
+              </h1>
+              <p className="animated-paragraph mt-2">
+                Our channels on Discord and Twitter are always open, resonating
+                with like-minded visionaries and enthusiasts.
+              </p>
+            </div>
           </div>
-          <h1 className="animated-headline">Join the Renaissance</h1>
-          <p className="animated-paragraph">
-            Our channels on Discord and Twitter are always open, resonating with
-            like-minded visionaries and enthusiasts.
-          </p>
         </section>
       </div>
     </div>

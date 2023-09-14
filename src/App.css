@@ -208,7 +208,7 @@
   filter: grayscale(100%);
   -webkit-animation: colorize 0.5s forwards 2s; 
   animation: colorize 0.5s forwards 2s;
-  width: 50%;  /* reduce the image's width to 50% of its original size */
+  width: 70%;  /* reduce the image's width to 50% of its original size */
   height: auto;  /* preserve the aspect ratio */
   border-radius: 69px; /* Round the corners */
 }
