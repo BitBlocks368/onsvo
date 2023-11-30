@@ -93,7 +93,7 @@ function App() {
         </div>
         <div className="social-icons">
           <a
-            href="https://twitter.com/BitBlocks368"
+            href="https://twitter.com/oldtalesnft"
             target="_blank"
             rel="noreferrer"
           >
